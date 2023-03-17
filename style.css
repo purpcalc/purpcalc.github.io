@@ -1,0 +1,221 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html, /* Sätter en font familj */
+body {
+  font-size: 16px;
+  font-family: monospace;
+  height: 100%;
+}
+    /* Kroppen till bakgrunden */
+body {
+  background: #10131c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -web-kit-font-smoothing: antialiased;
+  -webkite-tap-highlight-color: transparent;
+}
+   /* Ser till att border och outline är none för input */
+input {
+  border: none;
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+   /* Ser till att borde och outline är none för kanpparna och att muspekaren är pekare */
+button {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer; 
+}
+  /* Skapar knapp fokus och sätter outline till none */
+button:focus {
+  outline: none;
+}
+  /* Redigerar stylen på calculator classen */
+.calculator {
+    background: #1d2029;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .75rem;
+    width: 325px;
+    border: 1px solid #8d64cf;
+    padding: .75rem;
+    border-radius: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  /* Redigerar stylen på screen classen */
+.screen {
+  grid-column: 1 / 5;
+  border-radius: .60rem;
+  font-size: 3rem;
+  height: 6rem;
+  color: #8d64cf;
+  background: #333849;
+  text-align: end;
+  padding: .5rem;
+}
+  /* Sätter en placeholder färg */
+::placeholder {
+  color: #8d64cf;
+}
+/* Redigerar stylen på symbol och number classerna */
+.symbol,
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  aspect-ratio: 1;
+  font-size: 1.6rem;
+  color: #ffffff;
+  border-radius: 50%;
+  transition: .15s ease;
+}
+
+.symbol {
+  background: #8d64cf;
+}
+
+.symbol.hover {
+  background: #8d64cf;
+}
+
+.number {
+  background: #242a35;
+}
+
+.number:hover {
+  background: #333849ac;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: monospace;
+  color:#8d64cf;
+  max-width: 40ch;
+  text-align: left;
+  position: absolute;
+  left: 160px;
+  right: 40px;
+  top: 330px;
+  transform: scale(0.98);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span {
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
